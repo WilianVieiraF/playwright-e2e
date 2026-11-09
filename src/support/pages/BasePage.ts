@@ -11,5 +11,5 @@ export default abstract class BasePage {
 
   async verifyUrl(url: string | RegExp): Promise<void> {
     await expect(this.page).toHaveURL(url);
-  } 
+  }
 }
